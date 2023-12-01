@@ -1,0 +1,74 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background: #212338;
+}
+
+.container{
+    width: 1150px;
+}
+nav a{
+    position: relative;
+}
+
+.nav a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+
+.nav a:hover{
+    color: #BB2A2F;
+}
+
+.nav a:hover:after{
+    width: 100%;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(./img/banner.svg),
+     url(./img/bg1.svg);
+     background-size: (1057px, 804px), (773px, 948px);
+     background-repeat: no-repeat, no-repeat;
+     background-position-x: 50rem, 70rem;
+
+}
+
+section{
+    margin-top: 150px;
+    background:  url(./img/Polygon.svg) no-repeat;
+    background-position-y: 30rem;
+}
+
+.content h1{
+    color: #BB2A2F;
+    font-size: 62px;
+    position: relative;
+}
+
+.content h1::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #BB2A2F;
+    width: 12rem;
+    left: 0;
+    bottom: -1.5rem;
+}
+
+.cards{
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.card{
+    box-shadow: 40px 40px 40px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+

@@ -71,4 +71,27 @@ section{
 
 }
 
+.information{
+    background-image: url(./img/left.svg), url(./img/center.svg), url(./img/right.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left, center, right;
+    background-size: left, center, right;
+}
+
+.information .title h1{
+    color: #BB2A2F;
+    font-size: 62px;
+    position: relative;
+}
+
+.information .title h1::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #BB2A2F;
+    width: 12rem;
+    left: 0;
+    bottom: -1.5rem;
+}
+
 
